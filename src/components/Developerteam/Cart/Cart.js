@@ -1,11 +1,23 @@
 import React from 'react';
+import './Cart.css'
 
-const Cart = () => {
+const Cart = ({hiredDeveloper}) => {
+    const totalCost = hiredDeveloper?.reduce((acc,current) => {
+        return acc += current?.salary;
+    },0)
+
     return (
-        <div className="cart">
-            <h3>Developers Added : 0</h3>
-            <h3>Total Cost : ${0}</h3>
-            <button className="btn btn-secondary px-3 px-lg-4 fw-bold mt-4 d-block mx-auto"><i class="fas fa-cart-plus me-2"></i>Review Hired List</button>
+        <div className="text-secondary">
+            <h3>Developers Added : {hiredDeveloper?.length}</h3>
+            <h3>Total Cost : ${totalCost}</h3>
+              {hiredDeveloper && hiredDeveloper.map((developer,index) => (
+               <div className="cart d-flex justify-content-around align-items-center border border-1 border-muted py-2" key={index}>
+                <h6>{developer.name}</h6>
+                <img src={developer.image} alt="dev" className="cartimg" />
+                <h6>${developer.salary}</h6>
+               </div>
+               ))}
+            <button className="btn btn-secondary px-3 px-lg-4 fw-bold mt-4 d-block mx-auto"><i className="fas fa-cart-plus me-2"></i>Review Hired List</button>
         </div>
     );
 };

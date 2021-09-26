@@ -1,8 +1,8 @@
 import React from 'react';
 import './Singledeveloper.css'
 
-const Singledeveloper = (props) => {
-    const {name,gender,image,email,phone,salary,country} = props.developer;
+const Singledeveloper = ({developer, handleHire}) => {
+    const {name,gender,image,email,phone,salary,country} = developer;
     return (
         <div className="singledeveloper">
           <div className="col">
@@ -16,11 +16,11 @@ const Singledeveloper = (props) => {
             <h6>salary:  <span className="fw-bold">${salary}</span></h6>
             <h6>country:  <span className="fw-bold">{country}</span></h6>
             <div className="sociallinks my-3">
-              <a href="https://github.com/babulakterfsd" target="_blank" rel="noreferrer" className="me-4"><i class="fab fa-github text-secondary"></i></a>
-              <a href="https://twitter.com/babulakterfsd" target="_blank" rel="noreferrer" className="me-4"><i class="fab fa-twitter text-secondary"></i></a>
-              <a href="https://linkedin.com/in/babulakterfsd" target="_blank" rel="noreferrer"><i class="fab fa-linkedin text-secondary"></i></a>
+              <a href="https://github.com/babulakterfsd" target="_blank" rel="noreferrer" className="me-4"><i className="fab fa-github text-secondary"></i></a>
+              <a href="https://twitter.com/babulakterfsd" target="_blank" rel="noreferrer" className="me-4"><i className="fab fa-twitter text-secondary"></i></a>
+              <a href="https://linkedin.com/in/babulakterfsd" target="_blank" rel="noreferrer"><i className="fab fa-linkedin text-secondary"></i></a>
             </div>
-            <button className="btn btn-secondary text- px-3 px-lg-4 fw-bold"><i class="fas fa-code me-1"></i>Hire Developer</button>
+            <button onClick={() => handleHire && handleHire(developer)} className="btn btn-secondary text- px-3 px-lg-4 fw-bold"><i className="fas fa-code me-1"></i>Hire Developer</button>
          </div>
         </div>
        </div>
