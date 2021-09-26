@@ -11,8 +11,8 @@ const Cart = ({hiredDeveloper}) => {
 
     return (
         <div className="text-secondary">
-            <h3>Developers Added : {hiredDeveloper?.length}</h3>
-            <h3>Total Cost : ${totalCost}</h3>
+            <h3>Developers Added : <span className="text-success">{hiredDeveloper?.length}</span></h3>
+            <h3>Total Cost : <span className="text-success">${totalCost}</span></h3>
 
               {hiredDeveloper && hiredDeveloper.map((developer,index) => (
                <div className="cart d-flex justify-content-around align-items-center border border-1 border-muted py-2" key={index} >
