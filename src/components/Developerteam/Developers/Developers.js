@@ -1,6 +1,7 @@
 import React from 'react';
 import Singledeveloper from './Singledeveloper/Singledeveloper';
 
+//collecting data from parent and generating card based on data
 const Developers = (props) => {
     const {developers,handleHire} = props;
     return (

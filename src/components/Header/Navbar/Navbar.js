@@ -1,5 +1,6 @@
 import React from 'react';
 
+//navigatin bar
 const Navbar = () => {
     return (
         <div>

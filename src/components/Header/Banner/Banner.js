@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Banner text component
 const Banner = () => {
     return (
         <div className="container">

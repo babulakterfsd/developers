@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
 import './App.css';
 import Developerteam from './components/Developerteam/Developerteam';
 import Header from './components/Header/Header';
