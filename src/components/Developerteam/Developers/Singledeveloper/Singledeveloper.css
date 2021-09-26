@@ -1,0 +1,10 @@
+.singledeveloper .devimg {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0px auto;
+}
+.sociallinks i {
+    cursor: pointer;
+}

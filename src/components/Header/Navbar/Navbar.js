@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              <a className="navbar-brand text-secondary fw-bolder ms-5" href="https://leechcoder-babulakterfsd.netlify.app">LeechCoder</a>
+              <a className="navbar-brand text-secondary fw-bolder ms-5" href="https://leechcoder-babulakterfsd.netlify.app"><i class="fas fa-laptop-code text-success"></i> LeechCoder</a>
               <button className="navbar-toggler ms-auto btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
               </button>
