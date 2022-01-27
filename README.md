@@ -1,8 +1,8 @@
-# LeechCoder : Smart team to provide you smart solution
+# developers : Smart team to provide you smart solution
 
 ## Live Link 
 
-Visit our site  [leechcoder](https://leechcoder-babulakterfsd.netlify.app)
+Visit our site  [developers](https://developers-babulakterfsd.netlify.app/)
 
 
 ### About Project 
